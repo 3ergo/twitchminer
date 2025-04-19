@@ -2,9 +2,7 @@ FROM python:3.12
 
 ARG BUILDX_QEMU_ENV
 
-WORKDIR /usr/src/app
-
-COPY ./requirements.txt ./
+COPY ./ ./
 
 ENV CRYPTOGRAPHY_DONT_BUILD_RUST=1
 
