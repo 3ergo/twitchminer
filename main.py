@@ -114,7 +114,7 @@ twitch_miner = TwitchChannelPointsMiner(
 # The settings priority are: settings in mine function, settings in TwitchChannelPointsMiner instance, default settings.
 # For example, if in the mine function you don't provide any value for 'make_prediction' but you have set it on TwitchChannelPointsMiner instance, the script will take the value from here.
 # If you haven't set any value even in the instance the default one will be used
-
+enable_analytics = True
 twitch_miner.analytics(host="0.0.0.0", port=10000, refresh=5, days_ago=7)   # Start the Analytics web-server
 
 twitch_miner.mine(
